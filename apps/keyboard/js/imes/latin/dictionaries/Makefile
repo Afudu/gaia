@@ -50,7 +50,8 @@ WHITELIST = \
  sr-Cyrl.dict \
  sr-Latn.dict \
  sv.dict \
- tr.dict
+ tr.dict \
+ son.dict
 
 %.dict: %_wordlist.xml xml2dict.js dependency
 	node --harmony xml2dict.js -o $@ $<
